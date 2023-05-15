@@ -1,2 +1,2 @@
 # gerador de carta
- Meu primeiro projeto em JavaScript, gerador de carta inspirado no jogo de futebol Fifa.
+ Primeiro projeto em JavaScript, HTML e CSS. Criador de carta do jogo de futebol FIFA/FC.

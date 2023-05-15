@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'FIFA';
+    src: url('font/EASPORTS15.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'D-DIN-PRO';
+    src: url('font/DIN_PRO_COND.otf') format('opentype');
+}
+
+body {
+    background-color: rgb(129, 130, 131);
+    color: white;
+    font-family: 'FIFA', 'D-DIN-PRO';
+    font: normal 15pt;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+img#raridade {
+    position: relative;
+    width: 250px;
+    height: 350px;
+}
+
+div#pais {
+    height: 0px;
+}
+
+div#jogador {
+    height: 0px;
+}
+
+div#clube {
+    height: 0px;
+}
+
+img#pais {
+    position: relative;
+    bottom: 198px;
+    right: 57px;
+    width: 50px;
+    height: 30px;
+}
+
+img#jogador {
+    position: relative;
+    left: 25px;
+    bottom: 307px;
+    width: 150px;
+    height: 150px;
+}
+
+div#stats {
+    font-family: 'D-DIN-PRO';
+    font-size: 22px;
+}
+
+div#left {
+    float: left;
+}
+
+div#right {
+    float: right;
+}
+
+div#rit {
+    float: left;
+    position: relative;
+    bottom: 171px;
+    left: 213px;
+    width: 30px;
+}
+
+div#srit{
+    float: left;
+    position: relative;
+    bottom: 171px;
+    left: 158px;
+    width: 30px;
+}
+
+div#fin {
+    float: left;
+    position: relative;
+    bottom: 176px;
+    left: 213px;
+    width: 30px;
+}
+
+div#pas {
+    float: left;
+    position: relative;
+    bottom: 156px;
+    left: 184px;
+    width: 30px;
+}
+
+div#con {
+    float: right;
+    position: relative;
+    bottom: 155px;
+    right: 210px;
+    width: 30px;
+}
+
+div#def {
+    float: right;
+    position: relative;
+    bottom: 154px;
+    right: 211px;
+    width: 30px;
+}
+
+div#fis {
+    float: right;
+    position: relative;
+    bottom: 153px;
+    right: 213px;
+    width: 30px;
+}
+
+section#customizacao {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.544);
+}
+
+div#info {
+    float: left;
+    text-align: left;
+}
+
+div#info2 {
+    float: right;
+    text-align: right;
+}
+
+div#draridade {
+    display: block;
+    text-align: left;
+}
+
+div#dpais {
+    display: block;
+    text-align: left;
+}
+
+div#dclube {
+    text-align: right;
+}
+
+section#descricao {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.544);
+}
+
+footer {
+    font-family: 'Arial';
+    text-align: center;
+}

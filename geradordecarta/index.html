@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Carta</title>
+</head>
+<body>
+    <header>
+        <h1>Gerador de Carta</h1>
+    </header>
+    <section id="customizacao">
+        <div id="carta">
+            <div id="raridade">
+                <img id="raridade" src="cartas/ouro_raro.png">
+            </div>
+
+            <div id="pais">
+                <img id="pais" src="paises/argentina.png">
+            </div>
+            
+            <div id="clube">
+                <img id="clube" src="">
+            </div>
+
+            <div id="jogador">
+                <img id="jogador" src="jogadores/messi.png">
+            </div>
+
+            <div id="stats">
+                <div id="left">
+                    <p>
+                    <div id="rit">RIT</div>
+                    <div id="srit"><strong>87</strong></div>
+                    </p>
+                    <p>
+                    <div id="fin">FIN</div>
+                    </p>
+                    <p>
+                    <div id="pas">PAS</div>
+                    </p>
+                </div>
+                <div id="right">
+                    <p>
+                    <div id="con">CON</div>
+                    </p>
+                    <p>
+                    <div id="def">DEF</div>
+                    </p>
+                    <p>
+                    <div id="fis">FÍS</div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="info">
+            <p>
+                Clube:
+                <select name="selclube" id="selclube">
+                    <option>Barcelona</option>
+                    <option>Real Madrid</option>
+                </select>
+            </p>
+            <p>
+                Pais: 
+                <select name="selpais" id="selpais">
+                    <option>Argentina</option>
+                    <option>Brasil</option>
+                </select>
+            </p>
+        </div>
+        <div id="info2">
+            <p>
+                Raridade da carta:
+                <select name="selraridade" id="selraridade">
+                    <option>Ouro Raro</option>
+                    <option>Prata Raro</option>
+                </select>
+            </p>
+            <p>
+                Jogador:
+                <select name="seljogador" id="seljogador">
+                    <option value="Neymar">Neymar</option>
+                    <option value="Messi">Messi</option>
+                </select>
+            </p>
+        </div>
+        </section>
+
+    <h2>Descricao da carta</h2>
+    <section id="descricao">
+        <div>
+            <h1>Carta Ouro Raro</h1>
+        </div>
+    </section>
+    <footer>
+        <p>@mwbrrs</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
