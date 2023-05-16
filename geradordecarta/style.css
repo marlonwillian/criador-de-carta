@@ -42,7 +42,7 @@ div#clube {
     height: 0px;
 }
 
-img#pais {
+img#ipais {
     position: relative;
     bottom: 247px;
     right: 58px;
@@ -50,12 +50,51 @@ img#pais {
     height: 25px;
 }
 
-img#jogador {
+img#ijogador {
     position: relative;
     left: 30px;
     bottom: 319px;
     width: 150px;
     height: 150px;
+}
+
+img#iclube {
+    position: relative;
+    width: 35px;
+    right: 58px;
+    bottom: 210px;
+}
+
+img#ientrosamento {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 113px;
+    width: 100px;
+}
+
+div#geral {
+    font-family: 'D-DIN-PRO';
+    font-size: 50px;
+    text-shadow: 0.1em 0.2em 0.8em white;
+    position: relative;
+    right: 58px;
+    bottom: 335px;
+    height: 0px;
+}
+
+div#posicao {
+    font-family: 'D-DIN-PRO';
+    font-size: 30px;
+    text-shadow: 0.1em 0.2em 0.8em white;
+    position: relative;
+    right: 58px;
+    bottom: 285px;
+    height: 0px;
+}
+
+div#entrosamento {
+    height: 0px;
 }
 
 div#nome {
@@ -66,6 +105,10 @@ div#nome {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
+}
+
+input#inpnome {
+    bottom: 5px;
 }
 
 div#stats {
