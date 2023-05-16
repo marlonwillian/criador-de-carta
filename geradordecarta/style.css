@@ -20,6 +20,10 @@ header {
     text-align: center;
 }
 
+div#carta {
+    height: 50px;
+}
+
 img#raridade {
     position: relative;
     width: 250px;
@@ -40,18 +44,28 @@ div#clube {
 
 img#pais {
     position: relative;
-    bottom: 198px;
-    right: 57px;
-    width: 50px;
-    height: 30px;
+    bottom: 247px;
+    right: 58px;
+    width: 40px;
+    height: 25px;
 }
 
 img#jogador {
     position: relative;
-    left: 25px;
-    bottom: 307px;
+    left: 30px;
+    bottom: 319px;
     width: 150px;
     height: 150px;
+}
+
+div#nome {
+    font-family: 'D-DIN-PRO';
+    font-size: 30px;
+    position: relative;
+    bottom: 169px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
 }
 
 div#stats {
@@ -61,6 +75,7 @@ div#stats {
 
 div#left {
     float: left;
+    position: left;
 }
 
 div#right {
@@ -70,56 +85,96 @@ div#right {
 div#rit {
     float: left;
     position: relative;
-    bottom: 171px;
-    left: 213px;
+    bottom: 190px;
+    left: 202px;
     width: 30px;
 }
 
 div#srit{
     float: left;
     position: relative;
-    bottom: 171px;
-    left: 158px;
+    bottom: 216px;
+    left: 175px;
     width: 30px;
 }
 
 div#fin {
     float: left;
     position: relative;
-    bottom: 176px;
-    left: 213px;
+    bottom: 216px;
+    left: 202px;
+    width: 30px;
+}
+
+div#sfin{
+    float: left;
+    position: relative;
+    bottom: 242px;
+    left: 175px;
     width: 30px;
 }
 
 div#pas {
     float: left;
     position: relative;
-    bottom: 156px;
-    left: 184px;
+    bottom: 242px;
+    left: 204px;
+    width: 30px;
+}
+
+div#spas{
+    float: left;
+    position: relative;
+    bottom: 268px;
+    left: 175px;
     width: 30px;
 }
 
 div#con {
     float: right;
     position: relative;
-    bottom: 155px;
-    right: 210px;
+    bottom: 191px;
+    right: 178px;
+    width: 30px;
+}
+
+div#scon {
+    float: right;
+    position: relative;
+    bottom: 191px;
+    right: 178px;
     width: 30px;
 }
 
 div#def {
     float: right;
     position: relative;
-    bottom: 154px;
-    right: 211px;
+    bottom: 191px;
+    right: 179px;
+    width: 30px;
+}
+
+div#sdef {
+    float: right;
+    position: relative;
+    bottom: 191px;
+    right: 178px;
     width: 30px;
 }
 
 div#fis {
     float: right;
     position: relative;
-    bottom: 153px;
-    right: 213px;
+    bottom: 190px;
+    right: 181px;
+    width: 30px;
+}
+
+div#sfis {
+    float: right;
+    position: relative;
+    bottom: 190px;
+    right: 178px;
     width: 30px;
 }
 
@@ -129,10 +184,15 @@ section#customizacao {
     border-radius: 15px;
     padding: 15px;
     width: 500px;
-    height: 400px;
+    height: 500px;
     margin: auto;
     margin-bottom: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.544);
+}
+
+div#left {
+    height: 100px;
+    width: 30px;
 }
 
 div#info {
