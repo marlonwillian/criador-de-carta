@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(129, 130, 131);
+    background-color: rgb(192, 168, 94);
     color: white;
     font-family: 'FIFA', 'D-DIN-PRO';
     font: normal 15pt;
@@ -107,8 +107,15 @@ div#nome {
     width: 500px;
 }
 
+div#mudarnome {
+    position: relative;
+    top: 300px;
+}
+
 input#inpnome {
-    bottom: 5px;
+    text-align: left;
+    margin-left: auto;
+    width: 209px;
 }
 
 div#stats {
