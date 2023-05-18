@@ -115,7 +115,7 @@ div#mudarnome {
 input#inpnome {
     text-align: left;
     margin-left: auto;
-    width: 209px;
+    width: 328px;
 }
 
 div#stats {
@@ -269,7 +269,7 @@ div#dclube {
     text-align: right;
 }
 
-section#descricao {
+section#sdescricao {
     color: black;
     background-color: white;
     border-radius: 15px;
@@ -278,6 +278,16 @@ section#descricao {
     margin: auto;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.544);
+}
+
+div#divdescricao {
+    font-family: 'D-DIN-PRO';
+    font-size: 30px;
+}
+
+div#diventrosamento {
+    font-family: 'D-DIN-PRO';
+    font-size: 30px;
 }
 
 footer {
