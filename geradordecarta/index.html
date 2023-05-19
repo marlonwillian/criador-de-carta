@@ -80,22 +80,35 @@
             <p>
                 Clube:
                 <select name="selclube" id="selclube">
-                    <option>Barcelona</option>
-                    <option>Real Madrid</option>
+                    <option value="" selected>Icon</option>
+                    <optgroup label="Europa"></optgroup>
+                        <option>Barcelona</option>
+                        <option>Real Madrid</option>
+                    <optgroup label="América"></optgroup>
+                        <option>Athletico-PR</option>
+                        <option value="">Corinthians</option>
+                        <option>Botafogo</option>
                 </select>
             </p>
             <p>
                 Pais: 
                 <select name="selpais" id="selpais">
-                    <option>Argentina</option>
-                    <option>Brasil</option>
+                    <optgroup label="América"></optgroup>
+                        <option value="" selected>Brasil</option>
+                        <option>Argentina</option>
                 </select>
             </p>
             <p>
                 Posicao 
                 <select name="selpais" id="selpais">
-                    <option>Ponta Direita</option>
-                    <option>Meia</option>
+                    <optgroup label="Atacantes"></optgroup>
+                        <option value="" selected>Atacante</option>
+                        <option value="">Ponta Direita</option>
+                    <optgroup label="Meio-Campistas"></optgroup>
+                        <option value="">Meia</option>
+                        <option value="">Meio-Campo</option>
+                        <option value="">Volante</option>
+                    <optgroup label="Defensores"></optgroup>
                 </select>
             </p>
         </div>
@@ -108,22 +121,31 @@
                         <option>Ouro Raro</option>
                         <option>Prata Raro</option>
                     <optgroup label="Cartas Especiais"></optgroup>
+                        <option value="" selected>Icon</option>
                 </select>
             </p>
             <p>
                 Foto do Jogador:
                 <select name="seljogador" id="seljogador">
-                    <option value="" selected>Escolha</option>
-                    <option value="Messi">Messi</option>
-                    <option value="Neymar">Neymar</option>
+                    <optgroup label="Jogadores em atividade"></optgroup>
+                        <option value="Messi">Messi</option>
+                        <option value="Neymar">Neymar</option>
+                    <optgroup label="Lendas"></optgroup>
+                        <option value="Pelé">Pelé</option>
+                        <option value="" selected>Ronaldo</option>
+                        <option value="Johan Cruijff">Johan Cruijff</option>
                 </select>
             </p>
             <p>
                 Entrosamento: 
                 <select name="selpais" id="selpais">
-                    <option>Básico</option>
-                    <option>Caçador</option>
-                    <option>Falcão</option>
+                    <optgroup label="Jogador de linha"></optgroup>
+                        <option value="" selected>Básico</option>
+                        <option>Caçador</option>
+                        <option>Falcão</option>
+                    <optgroup label="Goleiro"></optgroup>
+                        <option>Luva</option>
+                        <option>Gato</option>
                 </select>
             </p>
         </div>
