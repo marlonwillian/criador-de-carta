@@ -103,13 +103,17 @@
             <p>
                 Raridade da carta:
                 <select name="selraridade" id="selraridade">
-                    <option>Ouro Raro</option>
-                    <option>Prata Raro</option>
+                    <option value="" selected>Escolha</option>
+                    <optgroup label="Cartas Normais"></optgroup>
+                        <option>Ouro Raro</option>
+                        <option>Prata Raro</option>
+                    <optgroup label="Cartas Especiais"></optgroup>
                 </select>
             </p>
             <p>
                 Foto do Jogador:
                 <select name="seljogador" id="seljogador">
+                    <option value="" selected>Escolha</option>
                     <option value="Messi">Messi</option>
                     <option value="Neymar">Neymar</option>
                 </select>
@@ -122,6 +126,10 @@
                     <option>Falcão</option>
                 </select>
             </p>
+        </div>
+        <div id="mudastats">
+            <h2>Clique no botão abaixo para mudar as estatísticas.</h2>
+            <input type="button" value="Clique Aqui">
         </div>
         </section>
 

@@ -234,7 +234,7 @@ section#customizacao {
     border-radius: 15px;
     padding: 15px;
     width: 500px;
-    height: 500px;
+    height: 615px;
     margin: auto;
     margin-bottom: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.544);
@@ -253,6 +253,12 @@ div#info {
 div#info2 {
     float: right;
     text-align: right;
+}
+
+div#mudastats {
+    font-family: 'D-DIN-PRO';
+    position: relative;
+    top: 430px;
 }
 
 div#draridade {
