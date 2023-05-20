@@ -35,7 +35,7 @@
 
             <div id="geral"><strong>90</strong></div>
             <div id="posicao"><strong>MEI</strong></div>
-            <div id="nome"><strong>NEYMAR</strong></div>
+            <div id="nome"><strong>NEYMAR JR</strong></div>
 
             <div id="stats">
                 <div id="left">
@@ -94,21 +94,29 @@
                 Pais: 
                 <select name="selpais" id="selpais">
                     <optgroup label="América"></optgroup>
-                        <option value="" selected>Brasil</option>
-                        <option>Argentina</option>
+                        <option value="brasil" selected>Brasil</option>
+                        <option value="argentina">Argentina</option>
                 </select>
             </p>
             <p>
                 Posicao 
                 <select name="selposicao" id="selposicao">
                     <optgroup label="Atacantes"></optgroup>
-                        <option value="ata" selected>Atacante</option>
-                        <option value="pd">Ponta Direita</option>
+                        <option value="PE">Ponta Esquerdo</option>
+                        <option value="ATA" selected>Centro-Avante</option>
+                        <option value="SA">Segundo Atacante</option>
+                        <option value="PD">Ponta Direita</option>
                     <optgroup label="Meio-Campistas"></optgroup>
-                        <option value="mei">Meia</option>
-                        <option value="mc">Meio-Campo</option>
-                        <option value="vol">Volante</option>
+                        <option value="ME">Meia Esquerda</option>
+                        <option value="MEI">Meia</option>
+                        <option value="MD">Meia Direita</option>
+                        <option value="MC">Meio-Campo</option>
+                        <option value="VOL">Volante</option>
                     <optgroup label="Defensores"></optgroup>
+                        <option value="LE">Lateral Esquerdo</option>
+                        <option value="ZAG">Zagueiro</option>
+                        <option value="LD">Lateral Direito</option>
+                        <option value="GOL">Goleiro</option>
                 </select>
             </p>
         </div>
@@ -127,13 +135,30 @@
             <p>
                 Foto do Jogador:
                 <select name="seljogador" id="seljogador">
-                    <optgroup label="Jogadores em atividade"></optgroup>
-                        <option value="Messi">Messi</option>
-                        <option value="Neymar">Neymar</option>
+                    <optgroup label="Premier League"></optgroup>
+                        <option value="Haaland">Erling Haaland</option>
+                        <option value="neymar">Mohamed Salah</option>
+                        <option value="mbappe">Harry Kane</option>
+                    <optgroup label="La Liga"></optgroup>
+                        <option value="messi">Vinícius Jr</option>
+                        <option value="neymar">Karim Benzema</option>
+                        <option value="mbappe">Robert Lewandowski</option>
+                    <optgroup label="Serie A"></optgroup>
+                        <option value="rafael">Rafael Leão</option>
+                        <option value="kvara">Kvaratskhelia</option>
+                        <option value="osimhen">Victor Osimhen</option>
+                    <optgroup label="Bundesliga"></optgroup>
+                        <option value="mane">Sadio Mané</option>
+                        <option value="jude">Jude Bellingham</option>
+                        <option value="nkunku">Christopher Nkunku</option>
+                    <optgroup label="Ligue 1"></optgroup>
+                        <option value="messi">Lionel Messi</option>
+                        <option value="neymar">Neymar Jr</option>
+                        <option value="mbappe">Kylian Mbappé</option>
                     <optgroup label="Lendas"></optgroup>
-                        <option value="Pelé">Pelé</option>
-                        <option value="" selected>Ronaldo</option>
-                        <option value="Johan Cruijff">Johan Cruijff</option>
+                        <option value="pele">Pelé</option>
+                        <option value="ronaldo" selected>Ronaldo</option>
+                        <option value="johan">Johan Cruijff</option>
                 </select>
             </p>
             <p>

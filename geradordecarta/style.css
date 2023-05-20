@@ -251,8 +251,14 @@ div#info {
 }
 
 div#info2 {
+    position: relative;
     float: right;
     text-align: right;
+    bottom: 98px;
+}
+
+select#seljogador {
+    width: 148px;
 }
 
 div#mudastats {
