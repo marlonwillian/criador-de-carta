@@ -24,12 +24,6 @@ div#carta {
     height: 50px;
 }
 
-img#raridade {
-    position: relative;
-    width: 250px;
-    height: 350px;
-}
-
 div#pais {
     height: 0px;
 }
@@ -40,6 +34,12 @@ div#jogador {
 
 div#clube {
     height: 0px;
+}
+
+img#iraridade {
+    position: relative;
+    width: 250px;
+    height: 350px;
 }
 
 img#ipais {
@@ -286,12 +286,12 @@ section#sdescricao {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.544);
 }
 
-div#divdescricao {
+div#desraridade {
     font-family: 'D-DIN-PRO';
     font-size: 30px;
 }
 
-div#diventrosamento {
+div#desentrosamento {
     font-family: 'D-DIN-PRO';
     font-size: 30px;
 }

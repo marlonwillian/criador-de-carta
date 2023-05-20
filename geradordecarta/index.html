@@ -14,7 +14,7 @@
     <section id="customizacao">
         <div id="carta">
             <div id="raridade">
-                <img id="raridade" src="img/cartas/ouro_raro.png">
+                <img id="iraridade" src="img/cartas/ouro_raro.png">
             </div>
 
             <div id="pais">
@@ -80,14 +80,14 @@
             <p>
                 Clube:
                 <select name="selclube" id="selclube">
-                    <option value="" selected>Icon</option>
+                    <option value="icon" selected>Icon</option>
                     <optgroup label="Europa"></optgroup>
-                        <option>Barcelona</option>
-                        <option>Real Madrid</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="realmadrid">Real Madrid</option>
                     <optgroup label="América"></optgroup>
-                        <option>Athletico-PR</option>
-                        <option value="">Corinthians</option>
-                        <option>Botafogo</option>
+                        <option value="athleticopr">Athletico-PR</option>
+                        <option value="corinthians">Corinthians</option>
+                        <option value="botafogo">Botafogo</option>
                 </select>
             </p>
             <p>
@@ -100,14 +100,14 @@
             </p>
             <p>
                 Posicao 
-                <select name="selpais" id="selpais">
+                <select name="selposicao" id="selposicao">
                     <optgroup label="Atacantes"></optgroup>
-                        <option value="" selected>Atacante</option>
-                        <option value="">Ponta Direita</option>
+                        <option value="ata" selected>Atacante</option>
+                        <option value="pd">Ponta Direita</option>
                     <optgroup label="Meio-Campistas"></optgroup>
-                        <option value="">Meia</option>
-                        <option value="">Meio-Campo</option>
-                        <option value="">Volante</option>
+                        <option value="mei">Meia</option>
+                        <option value="mc">Meio-Campo</option>
+                        <option value="vol">Volante</option>
                     <optgroup label="Defensores"></optgroup>
                 </select>
             </p>
@@ -138,7 +138,7 @@
             </p>
             <p>
                 Entrosamento: 
-                <select name="selpais" id="selpais">
+                <select name="selentrosamento" id="selentrosamento">
                     <optgroup label="Jogador de linha"></optgroup>
                         <option value="" selected>Básico</option>
                         <option>Caçador</option>
@@ -151,18 +151,18 @@
         </div>
         <div id="mudastats">
             <h2>Clique no botão abaixo para mudar as estatísticas.</h2>
-            <input type="button" value="Clique Aqui">
+            <input type="button" value="Clique Aqui" onclick="mudarStats()">
         </div>
         </section>
 
     <h1>Descricao da carta</h1>
     <section id="sdescricao">
         <h2>Carta Ouro Raro</h2>
-        <div id="divdescricao">
+        <div id="desraridade">
             Ouro Raro é a carta normal dos jogadores, o geral dessas cartas vão de 83 a 99.
         </div>
         <h2>Entrosamento Basico</h2>
-        <div id="diventrosamento">
+        <div id="desentrosamento">
             O estilo de entrosamento básico, é o padrão de todos os jogadores, aumenta 5 de geral em todos os atributos do jogador, RIT, CON, PAS, etc.
         </div>
     </section>
