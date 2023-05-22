@@ -8,9 +8,9 @@ let img_entrosamento = document.getElementById("ientrosamento")
 
 // geral, posição e nome //
 
-let geral = getElementById("geral")
-let posicao = getElementById("posicao")
-let nome = getElementById("nome")
+let geral = document.getElementById("geral")
+let posicao = document.getElementById("posicao")
+let nome = document.getElementById("nome")
 
 // stats - lado esquerdo //
 

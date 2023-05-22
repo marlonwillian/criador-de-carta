@@ -80,14 +80,32 @@
             <p>
                 Clube:
                 <select name="selclube" id="selclube">
-                    <option value="icon" selected>Icon</option>
-                    <optgroup label="Europa"></optgroup>
+                    <optgroup label="Premier League"></optgroup>
+                        <option value="barcelona">Liverpool</option>
+                        <option value="realmadrid">Manchester City</option>
+                        <option value="barcelona">Totenham</option>
+                    <optgroup label="La liga"></optgroup>
+                        <option value="atleticomadrid">Atlético de Madrid</option>
                         <option value="barcelona">Barcelona</option>
                         <option value="realmadrid">Real Madrid</option>
-                    <optgroup label="América"></optgroup>
-                        <option value="athleticopr">Athletico-PR</option>
+                    <optgroup label="Serie A"></optgroup>
+                        <option value="napoli">Napoli</option>
+                        <option value="milan">Milan</option>
+                        <option value="inter">Inter de Milão</option>
+                    <optgroup label="Bundesliga"></optgroup>
+                        <option value="dortmund">Borussia Dortmund</option>
+                        <option value="bayern">Bayern de Munique</option>
+                        <option value="leipzig">RB Leipzig</option>
+                    <optgroup label="Ligue 1"></optgroup>
+                        <option value="lyon">Lyon</option>
+                        <option value="olympique">Marseille</option>
+                        <option value="psg">PSG</option>
+                    <optgroup label="Brasileirão Serie A"></optgroup>
                         <option value="corinthians">Corinthians</option>
-                        <option value="botafogo">Botafogo</option>
+                        <option value="flamengo">Flamengo</option>
+                        <option value="gremio">Grêmio</option>
+                    <optgroup label="Clubes Alternativos"></optgroup>
+                        <option value="icon" selected>Icon</option>
                 </select>
             </p>
             <p>
@@ -113,8 +131,8 @@
                         <option value="MC">Meio-Campo</option>
                         <option value="VOL">Volante</option>
                     <optgroup label="Defensores"></optgroup>
-                        <option value="LE">Lateral Esquerdo</option>
                         <option value="ZAG">Zagueiro</option>
+                        <option value="LE">Lateral Esquerdo</option>
                         <option value="LD">Lateral Direito</option>
                         <option value="GOL">Goleiro</option>
                 </select>
@@ -124,25 +142,27 @@
             <p>
                 Raridade da carta:
                 <select name="selraridade" id="selraridade">
-                    <option value="" selected>Escolha</option>
-                    <optgroup label="Cartas Normais"></optgroup>
-                        <option>Ouro Raro</option>
-                        <option>Prata Raro</option>
                     <optgroup label="Cartas Especiais"></optgroup>
-                        <option value="" selected>Icon</option>
+                        <option value="icon" selected>Icon</option>
+                    <optgroup label="Cartas Raras"></optgroup>
+                        <option value="ouroraro">Ouro Raro</option>
+                        <option value="pratararo">Prata Raro</option>
+                    <optgroup label="Cartas Comuns"></optgroup>
+                        <option value="ourocomum">Ouro Comum</option>
+                        <option value="pratacomum">Prata Comum</option>
                 </select>
             </p>
             <p>
                 Foto do Jogador:
                 <select name="seljogador" id="seljogador">
                     <optgroup label="Premier League"></optgroup>
-                        <option value="Haaland">Erling Haaland</option>
-                        <option value="neymar">Mohamed Salah</option>
-                        <option value="mbappe">Harry Kane</option>
+                        <option value="haaland">Erling Haaland</option>
+                        <option value="salah">Mohamed Salah</option>
+                        <option value="kane">Harry Kane</option>
                     <optgroup label="La Liga"></optgroup>
-                        <option value="messi">Vinícius Jr</option>
-                        <option value="neymar">Karim Benzema</option>
-                        <option value="mbappe">Robert Lewandowski</option>
+                        <option value="vinicius">Vinícius Jr</option>
+                        <option value="benzema">Karim Benzema</option>
+                        <option value="robert">Robert Lewandowski</option>
                     <optgroup label="Serie A"></optgroup>
                         <option value="rafael">Rafael Leão</option>
                         <option value="kvara">Kvaratskhelia</option>
@@ -155,6 +175,10 @@
                         <option value="messi">Lionel Messi</option>
                         <option value="neymar">Neymar Jr</option>
                         <option value="mbappe">Kylian Mbappé</option>
+                    <optgroup label="Brasileirão Serie A"></optgroup>
+                        <option value="arrascaeta">Arrascaeta</option>
+                        <option value="guedes">Roger Guedes</option>
+                        <option value="suarez">Luís Suárez</option>
                     <optgroup label="Lendas"></optgroup>
                         <option value="pele">Pelé</option>
                         <option value="ronaldo" selected>Ronaldo</option>
@@ -164,13 +188,20 @@
             <p>
                 Entrosamento: 
                 <select name="selentrosamento" id="selentrosamento">
-                    <optgroup label="Jogador de linha"></optgroup>
-                        <option value="" selected>Básico</option>
-                        <option>Caçador</option>
-                        <option>Falcão</option>
+                    <optgroup label="Padrão"></optgroup>
+                        <option value="basico" selected>Básico</option>
+                    <optgroup label="Ataque"></optgroup>
+                        <option value="cacador">Caçador</option>
+                        <option value="falcao">Falcão</option>
+                    <optgroup label="Meio-Campo"></optgroup>
+                        <option value="maestro">Maestro</option>
+                        <option value="arquiteto">Arquiteto</option>
+                    <optgroup label="Defesa"></optgroup>
+                        <option value="sombra">Sombra</option>
+                        <option value="ancora">Âncora</option>
                     <optgroup label="Goleiro"></optgroup>
-                        <option>Luva</option>
-                        <option>Gato</option>
+                        <option value="luva">Luva</option>
+                        <option value="gato">Gato</option>
                 </select>
             </p>
         </div>
