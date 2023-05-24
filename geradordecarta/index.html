@@ -30,7 +30,7 @@
             </div>
 
             <div id="entrosamento">
-                <img id="ientrosamento" src="img/entrosamento/padrão/basico.png" alt="">
+                <img id="ientrosamento" src="img/entrosamento/basico.png">
             </div>
 
             <div id="geral"><strong>90</strong></div>
@@ -145,11 +145,11 @@
                     <optgroup label="Cartas Especiais"></optgroup>
                         <option value="icon" selected>Icon</option>
                     <optgroup label="Cartas Raras"></optgroup>
-                        <option value="ouroraro">Ouro Raro</option>
-                        <option value="pratararo">Prata Raro</option>
+                        <option value="ouro_raro">Ouro Raro</option>
+                        <option value="prata_raro">Prata Raro</option>
                     <optgroup label="Cartas Comuns"></optgroup>
-                        <option value="ourocomum">Ouro Comum</option>
-                        <option value="pratacomum">Prata Comum</option>
+                        <option value="ouro_comum">Ouro Comum</option>
+                        <option value="prata_comum">Prata Comum</option>
                 </select>
             </p>
             <p>
@@ -222,7 +222,7 @@
 
         <div id="dmudastats">
             <h2>Clique no botão abaixo para mudar as estatísticas.</h2>
-            <button id="bmudastats" onclick="mudarStats()">Mostrar</button>
+            <button id="bmudastats">Mostrar</button>
         </div>
         
         <div id="mudastats">
@@ -263,7 +263,14 @@
                 </div>
                 </p>
             </div>
+            
+            <div id="alteracoes">
+                <p>
+                <input type="button" id="salvar" value="Salvar Alterações" onclick="salvarAlteracoes()"></input>
+                </p>
+            </div>
         </div>
+
     </section>
     <p>
         <h1>Descricao da carta</h1>

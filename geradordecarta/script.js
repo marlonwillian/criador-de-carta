@@ -54,13 +54,30 @@ let sec_customizacao = document.getElementById("customizacao")
 
 let dmudastats = document.getElementById("mudastats")
 let btn = document.getElementById("bmudastats")
+let btnsalvar = document.getElementById("salvar")
 
 btn.addEventListener('click', function() {
     if(dmudastats.style.display === 'none') {
         sec_customizacao.style.height = "740px"
         dmudastats.style.display = 'block'
+        btn.innerHTML = "Esconder"
     } else {
         dmudastats.style.display = 'none'
         sec_customizacao.style.height = "620px"
+        btn.innerHTML = "Mostrar"
     }
 })
+
+function salvarAlteracoes() {
+    // FOTOS //
+
+    img_raridade.src = `img/cartas/${sel_raridade.value}.png`
+    img_pais.src = `img/paises/${sel_pais.value}.png`
+    img_clube.src = `img/clubes/${sel_clube.value}.png`
+    img_jogador.src = `img/jogadores/${sel_jogador.value}.png`
+    img_entrosamento.src = `img/entrosamento/${sel_entrosamento.value}.png`
+
+    // GERAL, POSIÇÃO, NOME E STATS // 
+
+    geral.innerHTML = ``
+}
