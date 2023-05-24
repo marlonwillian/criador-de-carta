@@ -219,13 +219,55 @@
                 </select>
             </p>
         </div>
-        <div id="mudastats">
-            <h2>Clique no botão abaixo para mudar as estatísticas.</h2>
-            <input type="button" value="Clique Aqui" onclick="mudarStats()">
-        </div>
-        </section>
 
-    <h1>Descricao da carta</h1>
+        <div id="dmudastats">
+            <h2>Clique no botão abaixo para mudar as estatísticas.</h2>
+            <button id="bmudastats" onclick="mudarStats()">Mostrar</button>
+        </div>
+        
+        <div id="mudastats">
+            <div id="mudastatse">
+                <!-- lado esquerdo -->
+                <p>
+                <div id="drit">
+                    RIT <input id="irit" type="number">
+                </div>
+                </p>
+                <p>
+                <div id="dfin">
+                    FIN <input id="ifin" type="number">
+                </div>
+                </p>
+                <p>
+                <div id="dpas">
+                    PAS <input id="ipas" type="number">
+                </div>
+                </p>
+            </div>
+
+            <div id="mudastatsd">
+                <!-- lado direito -->
+                <p>
+                <div id="dcon">
+                    <input id="icon" type="number"> CON
+                </div>
+                </p>
+                <p>
+                <div id="dfin">
+                    <input id="idef" type="number"> DEF
+                </div>
+                </p>
+                <p>
+                <div id="dpas">
+                    <input id="ifis" type="number"> FIS
+                </div>
+                </p>
+            </div>
+        </div>
+    </section>
+    <p>
+        <h1>Descricao da carta</h1>
+    </p>
     <section id="sdescricao">
         <h2>Carta Ouro Raro</h2>
         <div id="desraridade">
@@ -239,6 +281,6 @@
     <footer>
         <p>@mwbrrs</p>
     </footer>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>

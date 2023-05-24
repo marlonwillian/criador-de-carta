@@ -45,3 +45,22 @@ let sel_entrosamento = document.getElementById("selentrosamento")
 let des_raridade = document.getElementById("desraridade")
 let des_entrosamento = document.getElementById("desentrosamento")
 
+// section //
+
+let sec_customizacao = document.getElementById("customizacao")
+
+// diplay: block -> height = 740px
+// display: none -> height = 620px
+
+let dmudastats = document.getElementById("mudastats")
+let btn = document.getElementById("bmudastats")
+
+btn.addEventListener('click', function() {
+    if(dmudastats.style.display === 'none') {
+        sec_customizacao.style.height = "740px"
+        dmudastats.style.display = 'block'
+    } else {
+        dmudastats.style.display = 'none'
+        sec_customizacao.style.height = "620px"
+    }
+})

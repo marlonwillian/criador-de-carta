@@ -228,13 +228,15 @@ div#sfis {
     width: 30px;
 }
 
+/* -------------------------------------------------------- CUSTOMIZAÇÃO ------------------------------------------------------------------------------------ */
+
 section#customizacao {
     color: black;
     background-color: white;
     border-radius: 15px;
     padding: 15px;
     width: 500px;
-    height: 615px;
+    height: 620px;
     margin: auto;
     margin-bottom: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.544);
@@ -261,15 +263,33 @@ select#seljogador {
     width: 148px;
 }
 
-div#mudastats {
+div#dmudastats {
     font-family: 'D-DIN-PRO';
     position: relative;
     top: 430px;
 }
 
-div#draridade {
+div#bmudastats {
     display: block;
-    text-align: left;
+}
+
+div#mudastats {
+    display: none;
+}
+
+div#mudastatse {
+    font-family: 'FIFA';
+    position: relative;
+    float: left;
+    left: 50px;
+    top: 100px;
+}
+
+div#mudastatsd {
+    font-family: 'FIFA';
+    position: relative;
+    float: right;
+    right: 30px;
 }
 
 div#dpais {
@@ -280,6 +300,8 @@ div#dpais {
 div#dclube {
     text-align: right;
 }
+
+/* -------------------------------------------------------- DESCRIÇÃO ------------------------------------------------------------------------------------ */
 
 section#sdescricao {
     color: black;
