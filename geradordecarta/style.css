@@ -266,7 +266,7 @@ select#seljogador {
 div#dmudastats {
     font-family: 'D-DIN-PRO';
     position: relative;
-    top: 430px;
+    top: 435px;
 }
 
 div#bmudastats {
@@ -277,12 +277,18 @@ div#mudastats {
     display: none;
 }
 
+div#dger {
+    position: relative;
+    left: 72px;
+    bottom: 145px;
+}
+
 div#mudastatse {
     font-family: 'FIFA';
     position: relative;
     float: left;
     left: 50px;
-    top: 100px;
+    top: 130px;
 }
 
 div#mudastatsd {
@@ -290,6 +296,7 @@ div#mudastatsd {
     position: relative;
     float: right;
     right: 30px;
+    top: 29px;
 }
 
 div#dpais {
@@ -303,7 +310,7 @@ div#dclube {
 
 input#salvar {
     position: relative;
-    top: 550px;
+    top: 320px;
 }
 
 /* -------------------------------------------------------- DESCRIÇÃO ------------------------------------------------------------------------------------ */

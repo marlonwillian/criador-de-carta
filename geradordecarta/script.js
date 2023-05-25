@@ -24,10 +24,6 @@ let conducao = document.getElementById("scon")
 let defesa = document.getElementById("sdef")
 let fisico = document.getElementById("sfis")
 
-// informações personalizadas //
-
-let input_nome = document.getElementById("inpnome")
-
 // informações personalizadas - info 1 //
 
 let sel_clube = document.getElementById("selclube")
@@ -49,16 +45,15 @@ let des_entrosamento = document.getElementById("desentrosamento")
 
 let sec_customizacao = document.getElementById("customizacao")
 
-// diplay: block -> height = 740px
+// diplay: block -> height = 760px
 // display: none -> height = 620px
 
 let dmudastats = document.getElementById("mudastats")
 let btn = document.getElementById("bmudastats")
-let btnsalvar = document.getElementById("salvar")
 
 btn.addEventListener('click', function() {
     if(dmudastats.style.display === 'none') {
-        sec_customizacao.style.height = "740px"
+        sec_customizacao.style.height = "760px"
         dmudastats.style.display = 'block'
         btn.innerHTML = "Esconder"
     } else {
@@ -67,6 +62,17 @@ btn.addEventListener('click', function() {
         btn.innerHTML = "Mostrar"
     }
 })
+
+// STATS PERSONALIZADAS //
+
+let input_nome = document.getElementById("inpnome")
+let input_ger = document.getElementById("iger")
+let input_rit = document.getElementById("irit")
+let input_fin = document.getElementById("ifin")
+let input_pas = document.getElementById("ipas")
+let input_con = document.getElementById("icon")
+let input_def = document.getElementById("idef")
+let input_fis = document.getElementById("ifis")
 
 function salvarAlteracoes() {
     // FOTOS //
@@ -79,5 +85,24 @@ function salvarAlteracoes() {
 
     // GERAL, POSIÇÃO, NOME E STATS // 
 
-    geral.innerHTML = ``
+    nome.innerHTML = `<strong>${input_nome.value.toUpperCase()}</strong>`
+
+    let ar_input = [input_ger, input_rit, input_fin, input_pas, input_con, input_def, input_fis]
+
+    let ar_stats = [geral, ritmo, finalizacao, passe, conducao, defesa, fisico]
+
+    for (let c = 0; c <= ar_stats.length; c++) {
+        if (ar_input[c] < 1 || ar_input[c] > 99) {
+            ar_stats[c].innerHTML = ar_stats[c]
+        } else {
+            ar_stats[c].innerHTML = `<strong>${Number(ar_input[c].value)}</strong>`
+        }
+    }
+    // geral.innerHTML = `<strong>${Number(input_ger.value)}</strong>`
+    // ritmo.innerHTML = `<strong>${Number(input_rit.value)}</strong>`
+    // finalizacao.innerHTML = `<strong>${Number(input_fin.value)}</strong>`
+    // passe.innerHTML = `<strong>${Number(input_pas.value)}</strong>`
+    // conducao.innerHTML = `<strong>${Number(input_con.value)}</strong>`
+    // defesa.innerHTML = `<strong>${Number(input_def.value)}</strong>`
+    // fisico.innerHTML = `<strong>${Number(input_fis.value)}</strong>`
 }
