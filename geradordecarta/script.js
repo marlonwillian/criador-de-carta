@@ -85,24 +85,22 @@ function salvarAlteracoes() {
 
     // GERAL, POSIÇÃO, NOME E STATS // 
 
-    nome.innerHTML = `<strong>${input_nome.value.toUpperCase()}</strong>`
-
+    if (input_nome.value != ''){
+        nome.innerHTML = `<strong>${input_nome.value.toUpperCase()}</strong>`
+    }
+    
     let ar_input = [input_ger, input_rit, input_fin, input_pas, input_con, input_def, input_fis]
 
     let ar_stats = [geral, ritmo, finalizacao, passe, conducao, defesa, fisico]
 
     for (let c = 0; c <= ar_stats.length; c++) {
-        if (ar_input[c] < 1 || ar_input[c] > 99) {
-            ar_stats[c].innerHTML = ar_stats[c]
-        } else {
+        if (Number(ar_input[c].value) > 0 && Number(ar_input[c].value) <= 99) {
             ar_stats[c].innerHTML = `<strong>${Number(ar_input[c].value)}</strong>`
+        } else {
+            if (Number(ar_input[c].value) > 99) {
+                alert("Apenas estatísticas menores que 99 são válidas.")
+                break
+            }
         }
     }
-    // geral.innerHTML = `<strong>${Number(input_ger.value)}</strong>`
-    // ritmo.innerHTML = `<strong>${Number(input_rit.value)}</strong>`
-    // finalizacao.innerHTML = `<strong>${Number(input_fin.value)}</strong>`
-    // passe.innerHTML = `<strong>${Number(input_pas.value)}</strong>`
-    // conducao.innerHTML = `<strong>${Number(input_con.value)}</strong>`
-    // defesa.innerHTML = `<strong>${Number(input_def.value)}</strong>`
-    // fisico.innerHTML = `<strong>${Number(input_fis.value)}</strong>`
 }
