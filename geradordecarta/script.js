@@ -74,7 +74,7 @@ let input_con = document.getElementById("icon")
 let input_def = document.getElementById("idef")
 let input_fis = document.getElementById("ifis")
 
-function salvarAlteracoes() {
+function aplicarAlteracoes() {
     // FOTOS //
 
     img_raridade.src = `img/cartas/${sel_raridade.value}.png`
@@ -83,7 +83,9 @@ function salvarAlteracoes() {
     img_jogador.src = `img/jogadores/${sel_jogador.value}.png`
     img_entrosamento.src = `img/entrosamento/${sel_entrosamento.value}.png`
 
-    // GERAL, POSIÇÃO, NOME E STATS // 
+    // GERAL, POSIÇÃO, NOME E STATS //
+
+    posicao.innerHTML = `<strong>${sel_posicao.value}</strong>`
 
     if (input_nome.value != ''){
         nome.innerHTML = `<strong>${input_nome.value.toUpperCase()}</strong>`
