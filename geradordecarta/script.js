@@ -91,6 +91,25 @@ function aplicarAlteracoes() {
         nome.innerHTML = `<strong>${input_nome.value.toUpperCase()}</strong>`
     }
     
+    // left: 30px;
+    // bottom: 319px;
+    // width: 150px;
+    // height: 150px;
+
+    if (sel_raridade.value[0] === 'e' || sel_jogador.value[0] === 'e') {
+        img_jogador.style.position = 'absolute'
+        img_jogador.style.left = '288px'
+        img_jogador.style.height = '190px'
+        img_jogador.style.width = '190px'
+        img_jogador.style.top = '130px'
+    } else {
+        img_jogador.style.position = 'relative'
+        img_jogador.style.left = '30px'
+        img_jogador.style.height = '150px'
+        img_jogador.style.width = '150px'
+        img_jogador.style.bottom = '319px'
+    }
+
     let ar_input = [input_ger, input_rit, input_fin, input_pas, input_con, input_def, input_fis]
 
     let ar_stats = [geral, ritmo, finalizacao, passe, conducao, defesa, fisico]
