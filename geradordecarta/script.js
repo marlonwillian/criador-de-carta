@@ -91,23 +91,44 @@ function aplicarAlteracoes() {
         nome.innerHTML = `<strong>${input_nome.value.toUpperCase()}</strong>`
     }
     
-    // left: 30px;
-    // bottom: 319px;
-    // width: 150px;
-    // height: 150px;
+    // filter: grayscale(50%);
 
-    if (sel_raridade.value[0] === 'e' || sel_jogador.value[0] === 'e') {
-        img_jogador.style.position = 'absolute'
-        img_jogador.style.left = '288px'
-        img_jogador.style.height = '190px'
-        img_jogador.style.width = '190px'
+    if (sel_raridade.value[0] === 'e') {
+        img_jogador.style.position = 'relative'
+        img_jogador.style.left = '278px'
+        img_jogador.style.height = '200px'
+        img_jogador.style.width = '200px'
         img_jogador.style.top = '130px'
-    } else {
+
+        geral.style.fontSize = '45px'
+        geral.style.bottom = '320px'
+        posicao.style.bottom = '275px'
+        img_pais.style.bottom = '237px'
+        img_clube.style.bottom = '207px'
+    }
+
+    if (sel_jogador.value[0] === 'e') {
+        img_jogador.style.position = 'relative'
+        img_jogador.style.left = '278px'
+        img_jogador.style.height = '200px'
+        img_jogador.style.width = '200px'
+        img_jogador.style.top = '130px'
+    }
+
+    if (sel_raridade.value[0] !== 'e' || sel_jogador.value[0] !== 'e') {
         img_jogador.style.position = 'relative'
         img_jogador.style.left = '30px'
         img_jogador.style.height = '150px'
         img_jogador.style.width = '150px'
         img_jogador.style.bottom = '319px'
+    }
+
+    if (sel_raridade.value[0] !== 'e') {
+        geral.style.bottom = '335px'
+        geral.style.fontSize = '50px'
+        posicao.style.bottom = '285px'
+        img_pais.style.bottom = '247px'
+        img_clube.style.bottom = '110px'
     }
 
     let ar_input = [input_ger, input_rit, input_fin, input_pas, input_con, input_def, input_fis]

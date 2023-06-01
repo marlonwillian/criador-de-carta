@@ -44,30 +44,39 @@ img#iraridade {
 
 img#ipais {
     position: relative;
-    bottom: 247px;
+    bottom: 237px;
     right: 58px;
     width: 40px;
     height: 25px;
+    /* 
+    bottom: 247px
+    */
 }
 
 img#ijogador {
-    position: absolute;
-    left: 288px;
+    position: relative;
+    left: 10px;
     width: 190px;
-    height: 190px;
-    top: 130px;
-    /* position: relative;
+    height: 220px;
+    bottom: 310px;
+    
+    /* 
+    position: relative;
     left: 30px;
     bottom: 319px;
     width: 150px;
-    height: 150px;*/
+    height: 150px;
+    */
 }
 
 img#iclube {
     position: relative;
     width: 40px;
     right: 58px;
-    bottom: 210px;
+    bottom: 207px;
+    /* 
+    bottom: 210px
+    */
 }
 
 img#ientrosamento {
@@ -80,12 +89,15 @@ img#ientrosamento {
 
 div#geral {
     font-family: 'D-DIN-PRO';
-    font-size: 50px;
+    font-size: 45px;
     text-shadow: 0.1em 0.2em 0.8em white;
     position: relative;
     right: 58px;
-    bottom: 335px;
+    bottom: 320px;
     height: 0px;
+    /* 
+    bottom: 335px
+    */
 }
 
 div#posicao {
@@ -94,8 +106,11 @@ div#posicao {
     text-shadow: 0.1em 0.2em 0.8em white;
     position: relative;
     right: 58px;
-    bottom: 285px;
+    bottom: 275px;
     height: 0px;
+    /* 
+    bottom: 285px
+    */
 }
 
 div#entrosamento {
