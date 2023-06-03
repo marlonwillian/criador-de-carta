@@ -105,6 +105,8 @@ function aplicarAlteracoes() {
         img_jogador.style.width = '150px'
         img_jogador.style.height = '150px'
         img_jogador.style.bottom = '319px'
+        img_jogador.style.filter = 'grayscale(0%)'
+        nome.style.textShadow = 'none'
 
     } else {
         if (sel_raridade.value[0] === 'e' && sel_jogador.value[0] === 'e') {
@@ -121,6 +123,8 @@ function aplicarAlteracoes() {
         img_jogador.style.width = '190px'
         img_jogador.style.height = '190px'
         img_jogador.style.bottom = '310px'
+        img_jogador.style.filter = 'grayscale(90%)'
+        nome.style.textShadow = '0.0em 0.2em 0.2em white'
 
     } if (sel_raridade.value[0] === 'e' && sel_jogador.value[0] !== 'e') {
 
@@ -130,12 +134,14 @@ function aplicarAlteracoes() {
         img_jogador.style.height = '150px'
         img_jogador.style.width = '150px'
         img_jogador.style.bottom = '320px'
+        img_jogador.style.filter = 'grayscale(90%)'
 
         geral.style.fontSize = '45px'
         geral.style.bottom = '320px'
         posicao.style.bottom = '275px'
         img_pais.style.bottom = '237px'
         img_clube.style.bottom = '207px'
+        nome.style.textShadow = '0.0em 0.2em 0.2em white'
 
     } if (sel_raridade.value[0] !== 'e' && sel_jogador.value[0] === 'e') {
 
@@ -151,6 +157,8 @@ function aplicarAlteracoes() {
             img_jogador.style.width = '190px'
             img_jogador.style.height = '195px'
             img_jogador.style.bottom = '325px'
+            img_jogador.style.filter = 'grayscale(0%)'
+            nome.style.textShadow = 'none'
         }
     }
 
