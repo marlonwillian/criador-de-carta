@@ -53,7 +53,7 @@ let btn = document.getElementById("bmudastats")
 
 btn.addEventListener('click', function() {
     if(dmudastats.style.display === 'none') {
-        sec_customizacao.style.height = "760px"
+        sec_customizacao.style.height = "785px"
         dmudastats.style.display = 'block'
         btn.innerHTML = "Esconder"
     } else {
@@ -174,9 +174,26 @@ function aplicarAlteracoes() {
             ar_stats[c].innerHTML = `<strong>${Number(ar_input[c].value)}</strong>`
         } else {
             if (Number(ar_input[c].value) > 99) {
-                alert("Apenas estatísticas menores que 99 são válidas.")
+                alert("Apenas estatísticas menores que 100 são válidas.")
                 break
             }
         }
+    }
+}
+
+// function estiloEntrosamento() {
+    
+// }
+
+iconbtn = document.getElementById("efeitoicon")
+
+function efeitoIcon() {
+    img_jogador.style.filter = 'grayScale(0%)'
+    if (img_jogador.style.filter == 'grayscale(90%)') {
+        img_jogador.style.filter = 'grayScale(0%)'
+        iconbtn.innerHTML = 'Efeito Icon'
+    } else if (img_jogador.style.filter == 'grayscale(0%)') {
+        img_jogador.style.filter = 'grayScale(90%)'
+        iconbtn.innerHTML = 'Remover Efeito Icon'
     }
 }
