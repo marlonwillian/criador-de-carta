@@ -59,7 +59,6 @@ img#ijogador {
     width: 190px;
     height: 195px;
     bottom: 310px;
-    filter: grayscale(90%);
     /* 
     position: relative;
     left: 30px;
@@ -169,6 +168,14 @@ div#srit{
     width: 30px;
 }
 
+div#erit {
+    display: none;
+    float: left;
+    position: relative;
+    bottom: 242px;
+    left: 158px;
+}
+
 div#fin {
     float: left;
     position: relative;
@@ -180,15 +187,23 @@ div#fin {
 div#sfin{
     float: left;
     position: relative;
-    bottom: 242px;
+    bottom: 243px;
     left: 175px;
     width: 30px;
+}
+
+div#efin {
+    display: none;
+    float: left;
+    position: relative;
+    bottom: 295px;
+    left: 158px;
 }
 
 div#pas {
     float: left;
     position: relative;
-    bottom: 242px;
+    bottom: 243px;
     left: 204px;
     width: 30px;
 }
@@ -196,9 +211,17 @@ div#pas {
 div#spas{
     float: left;
     position: relative;
-    bottom: 268px;
+    bottom: 270px;
     left: 175px;
     width: 30px;
+}
+
+div#epas {
+    display: none;
+    float: left;
+    position: relative;
+    bottom: 350px;
+    left: 158px;
 }
 
 div#con {
@@ -217,6 +240,14 @@ div#scon {
     width: 30px;
 }
 
+div#econ {
+    display: block;
+    float: right;
+    position: relative;
+    bottom: 191px;
+    right: 100px;
+}
+
 div#def {
     float: right;
     position: relative;
@@ -233,6 +264,13 @@ div#sdef {
     width: 30px;
 }
 
+div#edef {
+    float: right;
+    position: relative;
+    bottom: 191px;
+    right: 100px;
+}
+
 div#fis {
     float: right;
     position: relative;
@@ -247,6 +285,13 @@ div#sfis {
     bottom: 190px;
     right: 178px;
     width: 30px;
+}
+
+div#efis {
+    float: right;
+    position: relative;
+    bottom: 191px;
+    right: 100px;
 }
 
 /* -------------------------------------------------------- CUSTOMIZAÇÃO ------------------------------------------------------------------------------------ */

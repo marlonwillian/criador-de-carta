@@ -4,6 +4,7 @@ let img_raridade = document.getElementById("iraridade")
 let img_pais = document.getElementById("ipais")
 let img_clube = document.getElementById("iclube")
 let img_jogador = document.getElementById("ijogador")
+img_jogador.style.filter = "grayscale(90%)"
 let img_entrosamento = document.getElementById("ientrosamento")
 
 // geral, posição e nome //
@@ -181,19 +182,18 @@ function aplicarAlteracoes() {
     }
 }
 
-// function estiloEntrosamento() {
+function estiloEntrosamento() {
     
-// }
+}
 
-iconbtn = document.getElementById("efeitoicon")
+let iconbtn = document.getElementById("efeitoicon")
 
 function efeitoIcon() {
-    img_jogador.style.filter = 'grayScale(0%)'
-    if (img_jogador.style.filter == 'grayscale(90%)') {
+    if (img_jogador.style.filter === 'grayscale(90%)') {
         img_jogador.style.filter = 'grayScale(0%)'
-        iconbtn.innerHTML = 'Efeito Icon'
-    } else if (img_jogador.style.filter == 'grayscale(0%)') {
+        iconbtn.value = 'Efeito Icon'
+    } else if (img_jogador.style.filter === 'grayscale(0%)') {
         img_jogador.style.filter = 'grayScale(90%)'
-        iconbtn.innerHTML = 'Remover Efeito Icon'
+        iconbtn.value = 'Remover Efeito Icon'
     }
 }
