@@ -183,7 +183,41 @@ function aplicarAlteracoes() {
 }
 
 function estiloEntrosamento() {
-    
+    /*
+    erit:
+    block - bottom: 242px left: 158px;
+    none - bottom: 242px left: 158px;
+
+    efin: 
+    block - bottom: 295px left: 158px;
+    none - bottom: 295px left: 158px;
+
+    epas:
+    block - bottom: 347px left: 158px;
+    none - bottom: 350px left: 158px;
+
+    */
+
+    let eritmo = getElementById('erit')
+    let efinalizacao = getElementById('efin')
+    let epasse = getElementById('epas')
+    let econducao = getElementById('econ')
+    let edefesa = getElementById('edef')
+    let efisico = getElementById('efis')
+
+    let ar_entrosamento = [eritmo, efinalizacao, epasse, econducao, edefesa, efisico]
+
+    for (let c = 0; c <= ar_entrosamento.length; c++) {
+        if (ar_entrosamento[c].value.style.display === block) {
+            ar_entrosamento[c].value.style.display = 'none'
+        } else if (ar_entrosamento[c].value.style.display === none) {
+            ar_entrosamento[c].value.style.display = 'block'
+        }
+    }
+
+    // if (sel_entrosamento.value === basico) {
+        
+    // }
 }
 
 let iconbtn = document.getElementById("efeitoicon")
