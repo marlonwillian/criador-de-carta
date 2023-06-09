@@ -40,10 +40,10 @@ let sel_entrosamento = document.getElementById("selentrosamento")
 // descrições //
 
 let des_raridade = document.getElementById("desraridade")
-let des_entrosamento = document.getElementById("desentrosamento")
 
 // section //
 
+let titulo_r = document.getElementById("titulo_raridade")
 let sec_customizacao = document.getElementById("customizacao")
 
 // diplay: block -> height = 760px
@@ -51,16 +51,20 @@ let sec_customizacao = document.getElementById("customizacao")
 
 let dmudastats = document.getElementById("mudastats")
 let btn = document.getElementById("bmudastats")
+let salvar = document.getElementById("salvar")
 
 btn.addEventListener('click', function() {
     if(dmudastats.style.display === 'none') {
         sec_customizacao.style.height = "785px"
         dmudastats.style.display = 'block'
         btn.innerHTML = "Esconder"
+        salvar.style.top = '283px'
     } else {
         dmudastats.style.display = 'none'
         sec_customizacao.style.height = "620px"
         btn.innerHTML = "Mostrar"
+        salvar.style.top = '320px'
+        // top: 283px;
     }
 })
 
@@ -165,6 +169,22 @@ function aplicarAlteracoes() {
 
     // filter: grayscale(50%);
 
+    if (sel_raridade.value == 'ouro_raro') {
+        titulo_r.innerHTML = 'carta ouro raro'
+        des_raridade.innerHTML = 'Ouro Raro é uma das cartas normais dos jogadores, o geral dessas cartas vão de 83 a 94.'
+    } else if (sel_raridade.value == 'prata_raro') {
+        titulo_r.innerHTML = 'carta prata raro'
+        des_raridade.innerHTML = 'Prata Raro é uma das cartas normais dos jogadores, o geral dessas cartas vão de 65 a 74.'
+    } else if (sel_raridade.value === 'ouro_comum') {
+        titulo_r.innerHTML = 'carta ouro comum'
+        des_raridade.innerHTML = 'Ouro Comum é uma das cartas normais dos jogadores, o geral dessas cartas vão de 75 a 83.'
+    } else if (sel_raridade.value === 'prata_comum') {
+        titulo_r.innerHTML = 'carta prata comum'
+        des_raridade.innerHTML = 'Prata Comum é uma das cartas normais dos jogadores, o geral dessas cartas vão de 65 a 74.'
+    } else if (sel_raridade.value === 'e_icon') {
+        titulo_r.innerHTML = 'carta icon'
+        des_raridade.innerHTML = 'Icon é uma das cartas especiais dos jogadores, o geral dessas cartas vão de 85 a 99, e os jogadores que tem uma carta dessas já se aposentaram e são lendas do futebol.'
+    }
 
     let ar_input = [input_ger, input_rit, input_fin, input_pas, input_con, input_def, input_fis]
 
@@ -180,44 +200,6 @@ function aplicarAlteracoes() {
             }
         }
     }
-}
-
-function estiloEntrosamento() {
-    /*
-    erit:
-    block - bottom: 242px left: 158px;
-    none - bottom: 242px left: 158px;
-
-    efin: 
-    block - bottom: 295px left: 158px;
-    none - bottom: 295px left: 158px;
-
-    epas:
-    block - bottom: 347px left: 158px;
-    none - bottom: 350px left: 158px;
-
-    */
-
-    let eritmo = getElementById('erit')
-    let efinalizacao = getElementById('efin')
-    let epasse = getElementById('epas')
-    let econducao = getElementById('econ')
-    let edefesa = getElementById('edef')
-    let efisico = getElementById('efis')
-
-    let ar_entrosamento = [eritmo, efinalizacao, epasse, econducao, edefesa, efisico]
-
-    for (let c = 0; c <= ar_entrosamento.length; c++) {
-        if (ar_entrosamento[c].value.style.display === block) {
-            ar_entrosamento[c].value.style.display = 'none'
-        } else if (ar_entrosamento[c].value.style.display === none) {
-            ar_entrosamento[c].value.style.display = 'block'
-        }
-    }
-
-    // if (sel_entrosamento.value === basico) {
-        
-    // }
 }
 
 let iconbtn = document.getElementById("efeitoicon")

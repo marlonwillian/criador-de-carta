@@ -82,8 +82,8 @@ img#ientrosamento {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    bottom: 113px;
-    width: 100px;
+    bottom: 50px;
+    width: 26px;
 }
 
 div#geral {
@@ -168,14 +168,6 @@ div#srit{
     width: 30px;
 }
 
-div#erit {
-    display: none;
-    float: left;
-    position: relative;
-    bottom: 242px;
-    left: 158px;
-}
-
 div#fin {
     float: left;
     position: relative;
@@ -190,14 +182,6 @@ div#sfin{
     bottom: 243px;
     left: 175px;
     width: 30px;
-}
-
-div#efin {
-    display: none;
-    float: left;
-    position: relative;
-    bottom: 295px;
-    left: 158px;
 }
 
 div#pas {
@@ -216,14 +200,6 @@ div#spas{
     width: 30px;
 }
 
-div#epas {
-    display: none;
-    float: left;
-    position: relative;
-    bottom: 350px;
-    left: 158px;
-}
-
 div#con {
     float: right;
     position: relative;
@@ -238,14 +214,6 @@ div#scon {
     bottom: 191px;
     right: 178px;
     width: 30px;
-}
-
-div#econ {
-    display: block;
-    float: right;
-    position: relative;
-    bottom: 191px;
-    right: 100px;
 }
 
 div#def {
@@ -264,13 +232,6 @@ div#sdef {
     width: 30px;
 }
 
-div#edef {
-    float: right;
-    position: relative;
-    bottom: 191px;
-    right: 100px;
-}
-
 div#fis {
     float: right;
     position: relative;
@@ -285,13 +246,6 @@ div#sfis {
     bottom: 190px;
     right: 178px;
     width: 30px;
-}
-
-div#efis {
-    float: right;
-    position: relative;
-    bottom: 191px;
-    right: 100px;
 }
 
 /* -------------------------------------------------------- CUSTOMIZAÇÃO ------------------------------------------------------------------------------------ */
@@ -346,7 +300,7 @@ div#mudastats {
 div#dger {
     position: relative;
     left: 72px;
-    bottom: 178px;
+    bottom: 128px;
 }
 
 div#mudastatse {
@@ -377,6 +331,12 @@ div#dclube {
 input#salvar {
     position: relative;
     top: 320px;
+}
+
+input#efeitoicon {
+    position: relative;
+    top: 575px;
+    left: 13px;
 }
 
 /* -------------------------------------------------------- DESCRIÇÃO ------------------------------------------------------------------------------------ */

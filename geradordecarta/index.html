@@ -42,34 +42,28 @@
                     <p>
                     <div id="rit">RIT</div>
                     <div id="srit"><strong>98</strong></div>
-                    <div id="erit">+5</div>
                     </p>
                     <p>
                     <div id="fin">FIN</div>
                     <div id="sfin"><strong>99</strong></div>
-                    <div id="efin">+5</div>
                     </p>
                     <p>
                     <div id="pas">PAS</div>
                     <div id="spas"><strong>99</strong></div>
-                    <div id="epas">+5</div>
                     </p>
                 </div>
                 <div id="right">
                     <p>
                     <div id="con">CON</div>
                     <div id="scon"><strong>99</strong></div>
-                    <div id="econ"></div>
                     </p>
                     <p>
                     <div id="def">DEF</div>
                     <div id="sdef"><strong>55</strong></div>
-                    <div id="edef"></div>
                     </p>
                     <p>
                     <div id="fis">FÍS</div>
                     <div id="sfis"><strong>77</strong></div>
-                    <div id="efis"></div>
                     </p>
                 </div>
             </div>
@@ -166,6 +160,9 @@
                 <select name="selraridade" id="selraridade">
                     <optgroup label="Cartas Especiais"></optgroup>
                         <option value="e_icon" selected>Icon</option>
+                        <option value="e_toty">Toty</option>
+                        <option value="e_otw">Otw</option>
+                        <option value="e_totw">Totw</option>
                     <optgroup label="Cartas Raras"></optgroup>
                         <option value="ouro_raro">Ouro Raro</option>
                         <option value="prata_raro">Prata Raro</option>
@@ -246,7 +243,7 @@
                         <option value="potente">Potente</option>
                     <optgroup label="Defesa"></optgroup>
                         <option value="ancora">Âncora</option>
-                        <option value="espinha Dorsal">Espinha Dorsal</option>
+                        <option value="espinha">Espinha Dorsal</option>
                         <option value="gladiador">Gladiador</option>
                         <option value="guardião">Guardião</option>
                         <option value="sentinela">Sentinela</option>
@@ -282,11 +279,6 @@
                 <div id="dpas">
                     PAS <input id="ipas" type="number">
                 </div>
-                </p>
-                <p>
-                    <input type="button" id="aumentarStats" value="Estilo de Entrosamento" onclick="estiloEntrosamento()"></input>
-                </p>
-                <p>
                 <div id="dger">
                     GERAL <input id="iger" type="number">
                 </div>
@@ -310,10 +302,10 @@
                     <input id="ifis" type="number"> FIS
                 </div>
                 </p>
-                <p>
-                    <input type="button" id="efeitoicon" value="Remover Efeito Icon" onclick="efeitoIcon()"></input>
-                </p>
             </div>
+            <p>
+                <input type="button" id="efeitoicon" value="Remover Efeito Icon" onclick="efeitoIcon()"></input>
+            </p>
         </div>
         <div id="alteracoes">
             <p>
@@ -325,13 +317,9 @@
         <h1>Descricao da carta</h1>
     </p>
     <section id="sdescricao">
-        <h2>Carta Ouro Raro</h2>
+        <h2 id="titulo_raridade">Carta Icon</h2>
         <div id="desraridade">
-            Ouro Raro é a carta normal dos jogadores, o geral dessas cartas vão de 83 a 99.
-        </div>
-        <h2>Entrosamento Basico</h2>
-        <div id="desentrosamento">
-            O estilo de entrosamento básico, é o padrão de todos os jogadores, aumenta 3 de geral em todos os atributos do jogador, RIT, CON, PAS, etc.
+            Icon é uma das cartas especiais dos jogadores, o geral dessas cartas vão de 85 a 99, e os jogadores que tem uma carta dessas já se aposentaram e são lendas do futebol.
         </div>
     </section>
     <footer>
