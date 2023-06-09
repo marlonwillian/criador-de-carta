@@ -19,11 +19,19 @@ let ritmo = document.getElementById("srit")
 let finalizacao = document.getElementById("sfin")
 let passe = document.getElementById("spas")
 
+let t_ritmo = document.getElementById("rit")
+let t_finalizacao = document.getElementById("fin")
+let t_passe = document.getElementById("pas")
+
 // stats - lado direito //
 
 let conducao = document.getElementById("scon")
 let defesa = document.getElementById("sdef")
 let fisico = document.getElementById("sfis")
+
+let t_conducao = document.getElementById("con")
+let t_defesa = document.getElementById("def")
+let t_fisico = document.getElementById("fis")
 
 // informações personalizadas - info 1 //
 
@@ -167,7 +175,9 @@ function aplicarAlteracoes() {
         }
     }
 
-    // filter: grayscale(50%);
+    let ar_stats1 = [geral, ritmo, finalizacao, passe, conducao, defesa, fisico]
+
+    let t_stats = [t_ritmo, t_finalizacao, t_passe, t_conducao, t_defesa, t_fisico]
 
     if (sel_raridade.value == 'ouro_raro') {
         titulo_r.innerHTML = 'carta ouro raro'
@@ -184,15 +194,33 @@ function aplicarAlteracoes() {
     } else if (sel_raridade.value === 'e_icon') {
         titulo_r.innerHTML = 'carta icon'
         des_raridade.innerHTML = 'Icon é uma das cartas especiais dos jogadores, o geral dessas cartas vão de 85 a 99, e os jogadores que tem uma carta dessas já se aposentaram e são lendas do futebol.'
+    } else if (sel_raridade.value === 'e_toty') {
+        titulo_r.innerHTML = 'carta toty'
+        des_raridade.innerHTML = 'TOTY é uma das cartas especiais dos jogadores, o geral dessas cartas vão de 93 a 99, e são dadas aos melhores jogadores da temporada.'
+
+        nome.style.textShadow = 'none'
+    } else if (sel_raridade.value === 'e_totw') {
+        titulo_r.innerHTML = 'carta totw'
+        des_raridade.innerHTML = 'TOTW é uma das cartas especiais dos jogadores, o geral dessas cartas vão dos gerais normais dos jogadores a 99, e são dadas aos melhores jogadores de cada semana.'
+
+        geral.style.textShadow = 'none'
+        posicao.style.textShadow = 'none'
+        posicao.style.color = 'rgb(249, 233, 159)'
+        nome.style.textShadow = 'none'
+        nome.style.color = 'rgb(249, 233, 159)'
+        img_entrosamento.style.filter = 'invert(100%)'
+        for (let c = 0; c <= ar_stats1.length; c++) {
+            ar_stats1[c].style.color = 'rgb(249, 233, 159)'
+            t_stats[c].style.color = 'rgb(249, 233, 159)'
+        }
     }
 
+    let ar_stats2 = [geral, ritmo, finalizacao, passe, conducao, defesa, fisico]
     let ar_input = [input_ger, input_rit, input_fin, input_pas, input_con, input_def, input_fis]
 
-    let ar_stats = [geral, ritmo, finalizacao, passe, conducao, defesa, fisico]
-
-    for (let c = 0; c <= ar_stats.length; c++) {
+    for (let c = 0; c <= ar_stats2.length; c++) {
         if (Number(ar_input[c].value) > 0 && Number(ar_input[c].value) <= 99) {
-            ar_stats[c].innerHTML = `<strong>${Number(ar_input[c].value)}</strong>`
+            ar_stats2[c].innerHTML = `<strong>${Number(ar_input[c].value)}</strong>`
         } else {
             if (Number(ar_input[c].value) > 99) {
                 alert("Apenas estatísticas menores que 100 são válidas.")
