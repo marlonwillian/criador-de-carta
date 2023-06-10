@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(192, 168, 94);
+    background-color: rgb(16, 17, 22);
     color: white;
     font-family: 'FIFA', 'D-DIN-PRO';
     font: normal 15pt;
@@ -53,12 +53,28 @@ img#ipais {
     */
 }
 
+img#ifundoj {
+    position: relative;
+    bottom: 550px;
+    left: 450px;
+    width: 450px;
+    opacity: 0.2;
+}
+
+img#ifundoc {
+    position: relative;
+    bottom: 370px;
+    right: 520px;
+    width: 500px;
+    opacity: 0.2;
+}
+
 img#ijogador {
     position: relative;
     left: 10px;
     width: 190px;
     height: 195px;
-    bottom: 310px;
+    bottom: 315px;
     filter: grayscale(90%);
     /* 
     position: relative;

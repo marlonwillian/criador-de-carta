@@ -4,6 +4,8 @@ let img_raridade = document.getElementById("iraridade")
 let img_pais = document.getElementById("ipais")
 let img_clube = document.getElementById("iclube")
 let img_jogador = document.getElementById("ijogador")
+let img_fundoj = document.getElementById("ifundoj")
+let img_fundoc = document.getElementById("ifundoc")
 let img_entrosamento = document.getElementById("ientrosamento")
 
 // geral, posição e nome //
@@ -92,7 +94,9 @@ function aplicarAlteracoes() {
     img_raridade.src = `img/cartas/${sel_raridade.value}.png`
     img_pais.src = `img/paises/${sel_pais.value}.png`
     img_clube.src = `img/clubes/${sel_clube.value}.png`
+    img_fundoc.src = `img/clubes/${sel_clube.value}.png`
     img_jogador.src = `img/jogadores/${sel_jogador.value}.png`
+    img_fundoj.src = `img/jogadores/${sel_jogador.value}.png`
     img_entrosamento.src = `img/entrosamento/${sel_entrosamento.value}.png`
 
     // GERAL, POSIÇÃO, NOME E STATS //
@@ -235,6 +239,7 @@ function aplicarAlteracoes() {
         nome.style.color = 'black'
         img_jogador.style.filter = 'grayscale(0%)'
         img_entrosamento.style.filter = 'invert(0%)'
+
         for (let c = 0; c < ar_stats1.length; c++) {
             ar_stats1[c].style.color = 'black'
             t_stats[c].style.color = 'black'
