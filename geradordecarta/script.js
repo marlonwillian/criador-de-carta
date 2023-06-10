@@ -4,7 +4,6 @@ let img_raridade = document.getElementById("iraridade")
 let img_pais = document.getElementById("ipais")
 let img_clube = document.getElementById("iclube")
 let img_jogador = document.getElementById("ijogador")
-img_jogador.style.filter = "grayscale(90%)"
 let img_entrosamento = document.getElementById("ientrosamento")
 
 // geral, posição e nome //
@@ -118,7 +117,6 @@ function aplicarAlteracoes() {
         img_jogador.style.width = '150px'
         img_jogador.style.height = '150px'
         img_jogador.style.bottom = '319px'
-        img_jogador.style.filter = 'grayscale(0%)'
         nome.style.textShadow = 'none'
 
     } else {
@@ -136,7 +134,6 @@ function aplicarAlteracoes() {
         img_jogador.style.width = '190px'
         img_jogador.style.height = '190px'
         img_jogador.style.bottom = '310px'
-        img_jogador.style.filter = 'grayscale(90%)'
         nome.style.textShadow = '0.0em 0.2em 0.2em white'
 
     } if (sel_raridade.value[0] === 'e' && sel_jogador.value[0] !== 'e') {
@@ -147,7 +144,6 @@ function aplicarAlteracoes() {
         img_jogador.style.height = '150px'
         img_jogador.style.width = '150px'
         img_jogador.style.bottom = '320px'
-        img_jogador.style.filter = 'grayscale(90%)'
 
         geral.style.fontSize = '45px'
         geral.style.bottom = '320px'
@@ -175,41 +171,136 @@ function aplicarAlteracoes() {
         }
     }
 
-    let ar_stats1 = [geral, ritmo, finalizacao, passe, conducao, defesa, fisico]
+    let ar_stats1 = [ritmo, finalizacao, passe, conducao, defesa, fisico]
 
     let t_stats = [t_ritmo, t_finalizacao, t_passe, t_conducao, t_defesa, t_fisico]
 
     if (sel_raridade.value == 'ouro_raro') {
         titulo_r.innerHTML = 'carta ouro raro'
         des_raridade.innerHTML = 'Ouro Raro é uma das cartas normais dos jogadores, o geral dessas cartas vão de 83 a 94.'
+
+        geral.style.textShadow = 'none'
+        geral.style.color = 'black'
+        posicao.style.textShadow = 'none'
+        posicao.style.color = 'black'
+        nome.style.textShadow = 'none'
+        nome.style.color = 'black'
+        img_jogador.style.filter = 'grayscale(0%)'
+        img_entrosamento.style.filter = 'invert(0%)'
+        for (let c = 0; c < ar_stats1.length; c++) {
+            ar_stats1[c].style.color = 'black'
+            t_stats[c].style.color = 'black'
+        }
     } else if (sel_raridade.value == 'prata_raro') {
         titulo_r.innerHTML = 'carta prata raro'
         des_raridade.innerHTML = 'Prata Raro é uma das cartas normais dos jogadores, o geral dessas cartas vão de 65 a 74.'
+
+        geral.style.textShadow = 'none'
+        geral.style.color = 'black'
+        posicao.style.textShadow = 'none'
+        posicao.style.color = 'black'
+        nome.style.textShadow = 'none'
+        nome.style.color = 'black'
+        img_jogador.style.filter = 'grayscale(0%)'
+        img_entrosamento.style.filter = 'invert(0%)'
+        for (let c = 0; c <= ar_stats1.length; c++) {
+            ar_stats1[c].style.color = 'black'
+            t_stats[c].style.color = 'black'
+        }
     } else if (sel_raridade.value === 'ouro_comum') {
         titulo_r.innerHTML = 'carta ouro comum'
         des_raridade.innerHTML = 'Ouro Comum é uma das cartas normais dos jogadores, o geral dessas cartas vão de 75 a 83.'
+
+        geral.style.textShadow = 'none'
+        geral.style.color = 'black'
+        posicao.style.textShadow = 'none'
+        posicao.style.color = 'black'
+        nome.style.textShadow = 'none'
+        nome.style.color = 'black'
+        img_jogador.style.filter = 'grayscale(0%)'
+        img_entrosamento.style.filter = 'invert(0%)'
+        for (let c = 0; c < ar_stats1.length; c++) {
+            ar_stats1[c].style.color = 'black'
+            t_stats[c].style.color = 'black'
+        }
     } else if (sel_raridade.value === 'prata_comum') {
         titulo_r.innerHTML = 'carta prata comum'
         des_raridade.innerHTML = 'Prata Comum é uma das cartas normais dos jogadores, o geral dessas cartas vão de 65 a 74.'
+
+        geral.style.textShadow = 'none'
+        geral.style.color = 'black'
+        posicao.style.textShadow = 'none'
+        posicao.style.color = 'black'
+        nome.style.textShadow = 'none'
+        nome.style.color = 'black'
+        img_jogador.style.filter = 'grayscale(0%)'
+        img_entrosamento.style.filter = 'invert(0%)'
+        for (let c = 0; c < ar_stats1.length; c++) {
+            ar_stats1[c].style.color = 'black'
+            t_stats[c].style.color = 'black'
+        }
     } else if (sel_raridade.value === 'e_icon') {
         titulo_r.innerHTML = 'carta icon'
         des_raridade.innerHTML = 'Icon é uma das cartas especiais dos jogadores, o geral dessas cartas vão de 85 a 99, e os jogadores que tem uma carta dessas já se aposentaram e são lendas do futebol.'
+
+        geral.style.textShadow = 'none'
+        geral.style.color = 'black'
+        posicao.style.textShadow = 'none'
+        posicao.style.color = 'black'
+        nome.style.textShadow = 'none'
+        nome.style.color = 'black'
+        img_entrosamento.style.filter = 'invert(0%)'
+        img_jogador.style.filter = 'grayscale(0%)'
+        for (let c = 0; c < ar_stats1.length; c++) {
+            ar_stats1[c].style.color = 'black'
+            t_stats[c].style.color = 'black'
+        }
     } else if (sel_raridade.value === 'e_toty') {
         titulo_r.innerHTML = 'carta toty'
         des_raridade.innerHTML = 'TOTY é uma das cartas especiais dos jogadores, o geral dessas cartas vão de 93 a 99, e são dadas aos melhores jogadores da temporada.'
-
         nome.style.textShadow = 'none'
-    } else if (sel_raridade.value === 'e_totw') {
-        titulo_r.innerHTML = 'carta totw'
-        des_raridade.innerHTML = 'TOTW é uma das cartas especiais dos jogadores, o geral dessas cartas vão dos gerais normais dos jogadores a 99, e são dadas aos melhores jogadores de cada semana.'
 
         geral.style.textShadow = 'none'
+        geral.style.color = 'rgb(249, 233, 159)'
         posicao.style.textShadow = 'none'
         posicao.style.color = 'rgb(249, 233, 159)'
         nome.style.textShadow = 'none'
         nome.style.color = 'rgb(249, 233, 159)'
         img_entrosamento.style.filter = 'invert(100%)'
-        for (let c = 0; c <= ar_stats1.length; c++) {
+        img_jogador.style.filter = 'grayscale(0%)'
+        for (let c = 0; c < ar_stats1.length; c++) {
+            ar_stats1[c].style.color = 'rgb(249, 233, 159)'
+            t_stats[c].style.color = 'rgb(249, 233, 159)'
+        }
+    } else if (sel_raridade.value === 'e_totw') {
+        titulo_r.innerHTML = 'carta totw'
+        des_raridade.innerHTML = 'TOTW é uma das cartas especiais dos jogadores, o geral dessas cartas vão dos gerais normais dos jogadores a 99, e são dadas aos melhores jogadores de cada semana.'
+
+        geral.style.textShadow = 'none'
+        geral.style.color = 'rgb(249, 233, 159)'
+        posicao.style.textShadow = 'none'
+        posicao.style.color = 'rgb(249, 233, 159)'
+        nome.style.textShadow = 'none'
+        nome.style.color = 'rgb(249, 233, 159)'
+        img_entrosamento.style.filter = 'invert(100%)'
+        img_jogador.style.filter = 'grayscale(0%)'
+        for (let c = 0; c < ar_stats1.length; c++) {
+            ar_stats1[c].style.color = 'rgb(249, 233, 159)'
+            t_stats[c].style.color = 'rgb(249, 233, 159)'
+        }
+    } else if (sel_raridade.value === 'e_otw') {
+        titulo_r.innerHTML = 'carta otw'
+        des_raridade.innerHTML = 'OTW é uma das cartas especiais dos jogadores, o geral dessas cartas iniciam no geral padrão, e vão aumentando conforme o número de cartas TOTW dos jogadores, e são dadas aos atletas que mudaram de time na janela de transferências.'
+
+        geral.style.textShadow = 'none'
+        geral.style.color = 'rgb(194, 221, 70)'
+        posicao.style.textShadow = 'none'
+        posicao.style.color = 'rgb(194, 221, 70)'
+        nome.style.textShadow = 'none'
+        nome.style.color = 'rgb(194, 221, 70)'
+        img_entrosamento.style.filter = 'invert(100%)'
+        img_jogador.style.filter = 'grayscale(0%)'
+        for (let c = 0; c < ar_stats1.length; c++) {
             ar_stats1[c].style.color = 'rgb(249, 233, 159)'
             t_stats[c].style.color = 'rgb(249, 233, 159)'
         }
@@ -233,11 +324,11 @@ function aplicarAlteracoes() {
 let iconbtn = document.getElementById("efeitoicon")
 
 function efeitoIcon() {
-    if (img_jogador.style.filter === 'grayscale(90%)') {
+    if (img_jogador.style.filter !== 'grayscale(0%)') {
         img_jogador.style.filter = 'grayScale(0%)'
-        iconbtn.value = 'Efeito Icon'
-    } else if (img_jogador.style.filter === 'grayscale(0%)') {
-        img_jogador.style.filter = 'grayScale(90%)'
         iconbtn.value = 'Remover Efeito Icon'
-    }
+    } else if (img_jogador.style.filter !== 'grayscale(90%)') {
+        img_jogador.style.filter = 'grayScale(90%)'
+        iconbtn.value = 'Efeito Icon'
+    } 
 }
