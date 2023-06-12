@@ -329,11 +329,11 @@ function aplicarAlteracoes() {
 let iconbtn = document.getElementById("efeitoicon")
 
 function efeitoIcon() {
-    if (img_jogador.style.filter !== 'grayscale(0%)') {
+    if (iconbtn.value === 'Remover Efeito Icon') {
         img_jogador.style.filter = 'grayScale(0%)'
-        iconbtn.value = 'Remover Efeito Icon'
-    } else if (img_jogador.style.filter !== 'grayscale(90%)') {
-        img_jogador.style.filter = 'grayScale(90%)'
         iconbtn.value = 'Efeito Icon'
+    } else if (iconbtn.value === 'Efeito Icon') {
+        img_jogador.style.filter = 'grayScale(90%)'
+        iconbtn.value = 'Remover Efeito Icon'
     } 
 }
