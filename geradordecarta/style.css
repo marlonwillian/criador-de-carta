@@ -15,7 +15,7 @@ body {
     font: normal 15pt;
     text-align: center;
 
-    min-width: 395px;
+    min-width: 500px;
     max-width: 800px;
     margin: auto;
 }
@@ -46,13 +46,13 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     h1 {
         font-size {
             
         }
     }
-}
+} */
 
 header {
     text-align: center;
@@ -417,7 +417,10 @@ div#desentrosamento {
     font-size: 30px;
 }
 
-footer {
-    font-family: 'Arial';
-    text-align: center;
+.fa-github {
+    padding-right: 5px;
+}
+
+.fa-instagram {
+    padding-right: 5px;
 }
