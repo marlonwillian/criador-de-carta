@@ -14,6 +14,44 @@ body {
     font-family: 'FIFA', 'D-DIN-PRO';
     font: normal 15pt;
     text-align: center;
+
+    min-width: 395px;
+    max-width: 800px;
+    margin: auto;
+}
+
+@media (max-width: 1368px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 1080px) {
+    img#ifundoj {
+        display: none;
+    }
+
+    img#ifundoc {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    body {
+        zoom: 90%;
+    }
+
+    div#info2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size {
+            
+        }
+    }
 }
 
 header {
@@ -371,7 +409,7 @@ section#sdescricao {
 
 div#desraridade {
     font-family: 'D-DIN-PRO';
-    font-size: 30px;
+    font-size: 35px;
 }
 
 div#desentrosamento {
